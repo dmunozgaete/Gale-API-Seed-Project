@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>API</RootNamespace>
     <AssemblyName>API</AssemblyName>
-    <UseIISExpress>true</UseIISExpress>
+    <UseIISExpress>false</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -102,9 +102,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>HelloWorld.dbml</DependentUpon>
     </Compile>
+    <Compile Include="Endpoints\SimpleAuthentication\Models\SimpleAuthentication.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SimpleAuthentication.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Endpoints\SimpleAuthentication\Services\Authenticate.cs" />
     <Compile Include="Endpoints\HelloWorld\Services\Get.cs" />
     <Compile Include="Endpoints\HelloWorld\Services\Post.cs" />
     <Compile Include="Endpoints\HelloWorld\Services\Put.cs" />
+    <Compile Include="Endpoints\SimpleAuthentication\SimpleAuthenticationController.cs" />
     <Compile Include="Errors.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -122,6 +129,11 @@
       <LastGenOutput>HelloWorld.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="Endpoints\SimpleAuthentication\Models\SimpleAuthentication.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>SimpleAuthentication.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Properties\PublishProfiles\QAS_Valentys.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -135,6 +147,9 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Endpoints\SimpleAuthentication\Models\SimpleAuthentication.dbml.layout">
+      <DependentUpon>SimpleAuthentication.dbml</DependentUpon>
+    </None>
     <EmbeddedResource Include="Errors.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Errors.Designer.cs</LastGenOutput>
@@ -155,7 +170,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>2767</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:2767/</IISUrl>
+          <IISUrl>http://localhost/API</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

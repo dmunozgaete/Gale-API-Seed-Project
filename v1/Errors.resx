@@ -119,10 +119,18 @@
   </resheader>
   <data name="COUNTRY_REQUIRED" xml:space="preserve">
     <value>Country is required</value>
-    <comment>Country is required</comment>
+    <comment>Validation Check</comment>
+  </data>
+  <data name="EMAIL_REQUIRED" xml:space="preserve">
+    <value>Email is required</value>
+    <comment>Validation Check</comment>
   </data>
   <data name="EMPTY_BODY" xml:space="preserve">
     <value>Model is Empty</value>
     <comment>Occurs when a model data is empty</comment>
+  </data>
+  <data name="PASSWORD_REQUIRED" xml:space="preserve">
+    <value>Password is required</value>
+    <comment>Validation Check</comment>
   </data>
 </root>

@@ -70,11 +70,29 @@ namespace API {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Email is required.
+        /// </summary>
+        internal static string EMAIL_REQUIRED {
+            get {
+                return ResourceManager.GetString("EMAIL_REQUIRED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Model is Empty.
         /// </summary>
         internal static string EMPTY_BODY {
             get {
                 return ResourceManager.GetString("EMPTY_BODY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Password is required.
+        /// </summary>
+        internal static string PASSWORD_REQUIRED {
+            get {
+                return ResourceManager.GetString("PASSWORD_REQUIRED", resourceCulture);
             }
         }
     }
