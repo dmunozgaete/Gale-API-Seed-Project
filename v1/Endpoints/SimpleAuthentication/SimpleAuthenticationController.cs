@@ -36,6 +36,7 @@ namespace API.Endpoints.SimpleAuthentication
         [HttpPost]
         [Swashbuckle.Swagger.Annotations.SwaggerResponseRemoveDefaults]
         [Swashbuckle.Swagger.Annotations.SwaggerResponse(System.Net.HttpStatusCode.OK)]
+        [HierarchicalRoute("/Authorize")]
         public IHttpActionResult Post(Models.Authenitcation credentials)
         {
             //--------------------------------------------------

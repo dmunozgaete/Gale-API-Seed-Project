@@ -23,7 +23,7 @@ namespace API
 		{
 			//--------------------------------------------------------------------------------------------------------------------------------------------
 			// Web API routes
-            config.EnableGaleRoutes();
+            config.EnableGaleRoutes("v1");  // If you want manual versioning, don't send the api version
             config.EnableSwagger();
             config.SetJsonDefaultFormatter();   //Google Chrome Fix (default formatter is xml :/)
 			//--------------------------------------------------------------------------------------------------------------------------------------------
