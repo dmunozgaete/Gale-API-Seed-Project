@@ -21,12 +21,18 @@ namespace API
 		/// <param name="config"></param>
 		public static void Register (HttpConfiguration config)
 		{
-			//--------------------------------------------------------------------------------------------------------------------------------------------
-			// Web API routes
-            config.EnableGaleRoutes("v1");  // If you want manual versioning, don't send the api version
-            config.EnableSwagger();
-            config.SetJsonDefaultFormatter();   //Google Chrome Fix (default formatter is xml :/)
-			//--------------------------------------------------------------------------------------------------------------------------------------------
+            //--------------------------------------------------------------------------------------------------------------------------------------------
+            // Web API routes defaults
+            config.EnableGaleRoutes();      // If you want manual versioning, don't send the api version
+            config.SetJsonDefaultFormatter();   // Google Chrome Fix (default formatter is xml :/)
+            //--------------------------------------------------------------------------------------------------------------------------------------------
+
+            //--------------------------------------------------------------------------------------------------------------------------------------------
+            // Swagger Documentation Enable
+            // In Azure Deployment , Azure remove all XML :/, so we need to change the documentation file name
+            config.EnableSwagger("documentation.config");             // Enable Swagger Always =)
+            //--------------------------------------------------------------------------------------------------------------------------------------------
+           
 		}
 	}
 }
