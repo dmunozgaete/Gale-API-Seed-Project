@@ -1,19 +1,18 @@
 Gale Starter Project
 =====================
 
-<img src="https://dl.dropboxusercontent.com/u/24087768/GrupoValentys/Logos/Grupo-Valentys%20-%20Negro.png" align="right" width="350px" />
+<img src="https://dl.dropboxusercontent.com/u/24087768/Gale/Logos/isotipo-fondo-transparente.png" align="right" height="80px" />
 
-Gale es un conjunto de librerías desarrollado por Valentys Ltda. para acelerar el desarrollo de aplicaciones realizadas en AngularJS, por lo que brinda un punto inicial para el comienzo de cualquier proyecto asociado al área de I+D+i.
-
-El proyecto es Open Source (Apache License 2.0) y provee un grupo de componentes reutilizables que se añaden al grupo de componentes actuales realizado por Material Design y actualmente usado como pilar de construcción para los desarrollos y lineamientos de nuestra empresa.
-
+Gale starter project es un proyecto de ejemplo para aquellos quienes
+deseen utilizar el Framework GALE, para la creación de sus servicios 
+bajo el principio RESTFul de forma rapida y simple.
 
 Referencias.
 ============
 
 - [Introducción](https://dl.dropboxusercontent.com/u/24087768/Gale/Gale%20v2.0.1.pdf)
-- [Documentación](http://gale-docs.azurewebsites.net/)
-- [Grupo Valentys](http://www.valentys.com)
+- [Documentación](http://gale.azurewebsites.net/)
+- [Angular Gale](http://angular-gale.azurewebsites.net/)
 
 
 Dependencias
@@ -21,7 +20,7 @@ Dependencias
 
 __Producción:__ Servidor Web
 
-__Desarrollo/Pruebas:__ node.js, npm, Bower, Valentys CLI
+__Desarrollo/Pruebas:__ node.js, npm, Bower, Gale CLI
 
 Compatibilidad con Navegadores
 ===============================
@@ -45,10 +44,11 @@ unificada frente a cualquier desafio.
 Contribuciones
 ===============
 
-Usa [GitHub](https://github.com/GrupoValentys/Gale-Starter-Project/issues) y [Pull Requests](https://github.com/GrupoValentys/Gale-Starter-Project/pulls).
-O puedes [contactarnos](mailto:dmunoz@valentys.com)
+Usa [GitHub](https://github.com/dmunozgaete/Gale-API-Seed-Project/issues) y [Pull Requests](https://github.com/dmunozgaete/Gale-API-Seed-Project/pulls).
+O puedes [contactarnos](mailto:dmunozgaete@gmail.com)
+
 
 Auspiciadores
 ==============
 
-Gracias a _[Grupo Valentys](http://www.valentys.com)_ por hacer de este proyecto una realidad.
+Gracias a _[Gale Framework](http://gale.azurewebsites.net)_ por hacer de este proyecto una realidad.
